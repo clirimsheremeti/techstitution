@@ -1,0 +1,5 @@
+{% block form%}
+	body{
+		background-color: blue;
+	}
+{% endblock form%}
