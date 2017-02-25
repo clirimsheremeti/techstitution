@@ -1,9 +1,1730 @@
-<!DOCTYPE HTML>
+   
 <head>
-	<title>Techstitution</title>
+
+	<title>Pyetesori per sherbimet e internetit</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous"></script>     
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 </head>
-<p> kjo eshte index faqja. </p>
+
 <body>
-	{% block form %}
-	{% endblock form %}
+<div class="container">
+<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="card-panel">
+<h5> Te dhenat per ndermarrjen </h5>
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Emri i ndermarrjes</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Numri i regjistrimit te biznesit</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="address" type="text" class="validate">
+          <label for="address">Adresa e ndermarrjes</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="contact" type="password" class="validate">
+          <label for="contact">Personi kontaktues</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="phone" type="email" class="validate">
+          <label for="phone">Telefoni</label>
+        </div>
+        <div class="col s6">
+          <div class="input-field inline">
+            <input id="email" type="email" class="validate">
+            <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>
+        </div>
+      </div>
+    </form>
+   </div>
+  <h5> Marrja e qasjes ne rrjetin global te internetit nga ju si ISP</h5>
+  <h6> Qasja ne internet global realizohet nga:</h6>
+
+  <form>
+    <p>
+      <input type="checkbox" class="filled-in" id="filled-in-box"/>
+      <label for="filled-in-box">ISP brenda Kosoves</label>
+    </p>
+    <p>
+      <input type="checkbox" class="filled-in" id="filled-in-box2"/>
+      <label for="filled-in-box2">ISP jashte Kosoves</label>
+    </p>
+    <p>
+      <input type="checkbox" class="filled-in" id="filled-in-box3"/>
+      <label for="filled-in-box3">Rrjete te tjere</label>
+    </p>
+  </form>
+  <h6>Kapaciteti dhe lloji i qasjes i marre nga ju si ISP</h6>
+  <strong>Lidhje fikse satelitore (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia" type="text" class="validate">
+          <label for="sasia">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa" type="password" class="validate">
+          <label for="tarifa">Tarifa</label>
+        </div>
+  </div>     
+  <strong>Lidhje fikse tokesore (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia1" type="text" class="validate">
+          <label for="sasia1">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa1" type="password" class="validate">
+          <label for="tarifa1">Tarifa</label>
+        </div>
+  </div> 
+  <strong>Lidhje me fiber optik (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia2" type="text" class="validate">
+          <label for="sasia2">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa2" type="password" class="validate">
+          <label for="tarifa2">Tarifa</label>
+        </div>
+  </div>       	      	  	
+<strong>Lidhje kabllore (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia3" type="text" class="validate">
+          <label for="sasia3">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa3" type="password" class="validate">
+          <label for="tarifa3">Tarifa</label>
+        </div>
+  </div>  
+  <strong>Lidhje fikse mikrovalore (PTP) (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia4" type="text" class="validate">
+          <label for="sasia4">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa4" type="password" class="validate">
+          <label for="tarifa4">Tarifa</label>
+        </div>
+  </div> 
+  <strong>Lloje te tjera te qasjes (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia5" type="text" class="validate">
+          <label for="sasia5">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa5" type="password" class="validate">
+          <label for="tarifa5">Tarifa</label>
+        </div>
+  </div>
+  <h5>Ofrimi i qasjes ne internet me shumice per ISP-te tjera</h5> 
+  <strong>Numri i ISP qe marrin qasje ne rrjetin tuaj</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia5" type="text" class="validate">
+          <label for="sasia5">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment" type="password" class="validate">
+          <label for="koment">Koment</label>
+        </div>
+  </div> 
+  <h6>Kapaciteti dhe lloji i qasjes se ofruar ISP-ve</h6>    
+  <strong>Lidhje fikse tokesore (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia6" type="text" class="validate">
+          <label for="sasia6">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa6" type="password" class="validate">
+          <label for="tarifa6">Tarifa</label>
+        </div>
+  </div> 
+  <strong>Lidhje me fiber optik (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia7" type="text" class="validate">
+          <label for="sasia7">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa7" type="password" class="validate">
+          <label for="tarifa7">Tarifa</label>
+        </div>
+  </div>       	      	  	
+<strong>Lidhje kabllore (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia8" type="text" class="validate">
+          <label for="sasia8">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa8" type="password" class="validate">
+          <label for="tarifa8">Tarifa</label>
+        </div>
+  </div>  
+  <strong>Lidhje fikse mikrovalore (PTP) (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia9" type="text" class="validate">
+          <label for="sasia9">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa9" type="password" class="validate">
+          <label for="tarifa9">Tarifa</label>
+        </div>
+  </div> 
+  <strong>Lloje te tjera te qasjes (Mbps)</strong>
+  <div class="row">
+        <div class="input-field col s3">
+          <input id="sasia10" type="text" class="validate">
+          <label for="sasia10">Sasia</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa10" type="password" class="validate">
+          <label for="tarifa10">Tarifa</label>
+        </div>
+  </div>
+  <h5> Ofrimi i qasjes ne internet perdoruesve fundor</h5>
+  <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>xDSL</div>
+      <div class="collapsible-body"><span>
+      <p> Shpejtesia < 1 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual" type="text" class="validate">
+          <label for="individual">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes" type="password" class="validate">
+          <label for="biznes">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total" type="text" class="validate">
+          <label for="total">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment1" type="password" class="validate">
+          <label for="koment1">Koment</label>
+        </div>
+  		</div>
+        <p> 1 Mbps < Shpejtesia < 2 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual1" type="text" class="validate">
+          <label for="individual1">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes1" type="password" class="validate">
+          <label for="biznes1">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total1" type="text" class="validate">
+          <label for="total1">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment2" type="password" class="validate">
+          <label for="koment2">Koment</label>
+        </div>
+  		</div>
+  		<p> 2 Mbps < Shpejtesia < 4 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual2" type="text" class="validate">
+          <label for="individual2">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes2" type="password" class="validate">
+          <label for="biznes2">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total2" type="text" class="validate">
+          <label for="total2">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment3" type="password" class="validate">
+          <label for="koment3">Koment</label>
+        </div>
+  		</div>
+  		<p> 4 Mbps < Shpejtesia < 8 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual3" type="text" class="validate">
+          <label for="individual3">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes3" type="password" class="validate">
+          <label for="biznes3">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total3" type="text" class="validate">
+          <label for="total3">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment4" type="password" class="validate">
+          <label for="koment4">Koment</label>
+        </div>
+  		</div>
+  		<p> 8 Mbps < Shpejtesia < 20 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual4" type="text" class="validate">
+          <label for="individual4">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes4" type="password" class="validate">
+          <label for="biznes4">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total4" type="text" class="validate">
+          <label for="total4">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment5" type="password" class="validate">
+          <label for="koment5">Koment</label>
+        </div>
+  		</div>
+  		<p> Shpejtesia > 20 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual5" type="text" class="validate">
+          <label for="individual5">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes5" type="password" class="validate">
+          <label for="biznes5">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total5" type="text" class="validate">
+          <label for="total5">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment6" type="password" class="validate">
+          <label for="koment6">Koment</label>
+        </div>
+  		</div>
+       </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Modem Kabllor</div>
+      <div class="collapsible-body"><span>
+      <p> Shpejtesia < 1 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual6" type="text" class="validate">
+          <label for="individual6">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes6" type="password" class="validate">
+          <label for="biznes6">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total6" type="text" class="validate">
+          <label for="total6">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment7" type="password" class="validate">
+          <label for="koment7">Koment</label>
+        </div>
+  		</div>
+        <p> 1 Mbps < Shpejtesia < 2 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual8" type="text" class="validate">
+          <label for="individual8">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes8" type="password" class="validate">
+          <label for="biznes8">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total8" type="text" class="validate">
+          <label for="total8">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment9" type="password" class="validate">
+          <label for="koment9">Koment</label>
+        </div>
+  		</div>
+  		<p> 2 Mbps < Shpejtesia < 4 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual9" type="text" class="validate">
+          <label for="individual9">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes9" type="password" class="validate">
+          <label for="biznes9">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total9" type="text" class="validate">
+          <label for="total9">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment10" type="password" class="validate">
+          <label for="koment10">Koment</label>
+        </div>
+  		</div>
+  		<p> 4 Mbps < Shpejtesia < 8 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual10" type="text" class="validate">
+          <label for="individual10">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes10" type="password" class="validate">
+          <label for="biznes10">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total10" type="text" class="validate">
+          <label for="total10">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment11" type="password" class="validate">
+          <label for="koment11">Koment</label>
+        </div>
+  		</div>
+  		<p> 8 Mbps < Shpejtesia < 20 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual11" type="text" class="validate">
+          <label for="individual11">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes11" type="password" class="validate">
+          <label for="biznes11">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total11" type="text" class="validate">
+          <label for="total11">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment12" type="password" class="validate">
+          <label for="koment12">Koment</label>
+        </div>
+  		</div>
+  		<p> Shpejtesia > 20 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual12" type="text" class="validate">
+          <label for="individual12">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes12" type="password" class="validate">
+          <label for="biznes12">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total12" type="text" class="validate">
+          <label for="total12">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment13" type="password" class="validate">
+          <label for="koment13">Koment</label>
+        </div>
+  		</div>
+       </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Lidhje Wireless FWA</div>
+      <div class="collapsible-body"><span>
+      <p> Shpejtesia < 1 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual13" type="text" class="validate">
+          <label for="individual13">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes13" type="password" class="validate">
+          <label for="biznes13">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total13" type="text" class="validate">
+          <label for="total13">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment14" type="password" class="validate">
+          <label for="koment14">Koment</label>
+        </div>
+  		</div>
+        <p> 1 Mbps < Shpejtesia < 2 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual14" type="text" class="validate">
+          <label for="individual14">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes14" type="password" class="validate">
+          <label for="biznes14">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total14" type="text" class="validate">
+          <label for="total14">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment15" type="password" class="validate">
+          <label for="koment15">Koment</label>
+        </div>
+  		</div>
+  		<p> 2 Mbps < Shpejtesia < 4 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual15" type="text" class="validate">
+          <label for="individual15">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes15" type="password" class="validate">
+          <label for="biznes15">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total15" type="text" class="validate">
+          <label for="total15">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment16" type="password" class="validate">
+          <label for="koment16">Koment</label>
+        </div>
+  		</div>
+  		<p> 4 Mbps < Shpejtesia < 8 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual16" type="text" class="validate">
+          <label for="individual16">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes16" type="password" class="validate">
+          <label for="biznes16">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total16" type="text" class="validate">
+          <label for="total16">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment17" type="password" class="validate">
+          <label for="koment17">Koment</label>
+        </div>
+  		</div>
+  		<p> 8 Mbps < Shpejtesia < 20 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual17" type="text" class="validate">
+          <label for="individual17">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes17" type="password" class="validate">
+          <label for="biznes17">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total17" type="text" class="validate">
+          <label for="total17">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment18" type="password" class="validate">
+          <label for="koment18">Koment</label>
+        </div>
+  		</div>
+  		<p> Shpejtesia > 20 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual18" type="text" class="validate">
+          <label for="individual18">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes18" type="password" class="validate">
+          <label for="biznes18">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total18" type="text" class="validate">
+          <label for="total18">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment19" type="password" class="validate">
+          <label for="koment19">Koment</label>
+        </div>
+  		</div>
+       </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>FTTH/B</div>
+      <div class="collapsible-body"><span>
+      <p> Shpejtesia < 1 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual19" type="text" class="validate">
+          <label for="individual19">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes19" type="password" class="validate">
+          <label for="biznes19">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total19" type="text" class="validate">
+          <label for="total19">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment20" type="password" class="validate">
+          <label for="koment20">Koment</label>
+        </div>
+  		</div>
+        <p> 1 Mbps < Shpejtesia < 2 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual20" type="text" class="validate">
+          <label for="individual20">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes20" type="password" class="validate">
+          <label for="biznes20">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total20" type="text" class="validate">
+          <label for="total20">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment21" type="password" class="validate">
+          <label for="koment21">Koment</label>
+        </div>
+  		</div>
+  		<p> 2 Mbps < Shpejtesia < 4 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual21" type="text" class="validate">
+          <label for="individual21">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes21" type="password" class="validate">
+          <label for="biznes21">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total21" type="text" class="validate">
+          <label for="total21">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment22" type="password" class="validate">
+          <label for="koment22">Koment</label>
+        </div>
+  		</div>
+  		<p> 4 Mbps < Shpejtesia < 8 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual22" type="text" class="validate">
+          <label for="individual22">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes22" type="password" class="validate">
+          <label for="biznes22">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total22" type="text" class="validate">
+          <label for="total22">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment23" type="password" class="validate">
+          <label for="koment23">Koment</label>
+        </div>
+  		</div>
+  		<p> 8 Mbps < Shpejtesia < 20 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual23" type="text" class="validate">
+          <label for="individual23">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes23" type="password" class="validate">
+          <label for="biznes23">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total23" type="text" class="validate">
+          <label for="total23">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment24" type="password" class="validate">
+          <label for="koment24">Koment</label>
+        </div>
+  		</div>
+  		<p> Shpejtesia > 20 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual24" type="text" class="validate">
+          <label for="individual24">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes24" type="password" class="validate">
+          <label for="biznes24">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total24" type="text" class="validate">
+          <label for="total24">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment25" type="password" class="validate">
+          <label for="koment25">Koment</label>
+        </div>
+  		</div>
+       </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Lidhje satelitore</div>
+      <div class="collapsible-body"><span>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="individual25" type="text" class="validate">
+          <label for="individual25">Individual</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="biznes25" type="password" class="validate">
+          <label for="biznes25">Biznes</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="total25" type="text" class="validate">
+          <label for="total25">Total</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment26" type="password" class="validate">
+          <label for="koment26">Koment</label>
+        </div>
+  		</div>
+       	</span></div>
+    </li>
+   </ul>
+   <h5> Numri i perdoruesve fundor ne regjione </h5>
+   <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Prishtina</div>
+      <div class="collapsible-body"><span><p>Prishtina</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl" type="text" class="validate">
+          <label for="xdsl">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor" type="text" class="validate">
+          <label for="kabllor">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa" type="password" class="validate">
+          <label for="fwa">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx" type="text" class="validate">
+          <label for="ffthx">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Podujeva</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl1" type="text" class="validate">
+          <label for="xdsl1">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor1" type="text" class="validate">
+          <label for="kabllor1">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa1" type="password" class="validate">
+          <label for="fwa1">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx1" type="text" class="validate">
+          <label for="ffthx1">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Drenasi</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl2" type="text" class="validate">
+          <label for="xdsl2">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor2" type="text" class="validate">
+          <label for="kabllor2">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa2" type="password" class="validate">
+          <label for="fwa2">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx2" type="text" class="validate">
+          <label for="ffthx2">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Fushe Kosova</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl3" type="text" class="validate">
+          <label for="xdsl3">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor3" type="text" class="validate">
+          <label for="kabllor3">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa3" type="password" class="validate">
+          <label for="fwa3">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx3" type="text" class="validate">
+          <label for="ffthx3">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Obiliqi</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl4" type="text" class="validate">
+          <label for="xdsl4">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor4" type="text" class="validate">
+          <label for="kabllor4">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa4" type="password" class="validate">
+          <label for="fwa4">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx4" type="text" class="validate">
+          <label for="ffthx4">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Lipjani</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl5" type="text" class="validate">
+          <label for="xdsl5">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor5" type="text" class="validate">
+          <label for="kabllor5">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa5" type="password" class="validate">
+          <label for="fwa5">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx5" type="text" class="validate">
+          <label for="ffthx5">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Gracanica</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl6" type="text" class="validate">
+          <label for="xdsl6">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor6" type="text" class="validate">
+          <label for="kabllor6">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa6" type="password" class="validate">
+          <label for="fwa6">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx6" type="text" class="validate">
+          <label for="ffthx6">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Novoberda</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl7" type="text" class="validate">
+          <label for="xdsl7">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor7" type="text" class="validate">
+          <label for="kabllor7">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa7" type="password" class="validate">
+          <label for="fwa7">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx7" type="text" class="validate">
+          <label for="ffthx7">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i> Mitrovica </div>
+      <div class="collapsible-body"><span><p>Mitrovica</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl8" type="text" class="validate">
+          <label for="xdsl8">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor8" type="text" class="validate">
+          <label for="kabllor8">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa8" type="password" class="validate">
+          <label for="fwa8">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx8" type="text" class="validate">
+          <label for="ffthx8">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+       <div class="collapsible-body"><span><p>Vushtrria</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl9" type="text" class="validate">
+          <label for="xdsl9">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor9" type="text" class="validate">
+          <label for="kabllor9">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa9" type="password" class="validate">
+          <label for="fwa9">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx9" type="text" class="validate">
+          <label for="ffthx9">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Skenderaji</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl10" type="text" class="validate">
+          <label for="xdsl10">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor10" type="text" class="validate">
+          <label for="kabllor10">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa10" type="password" class="validate">
+          <label for="fwa10">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx10" type="text" class="validate">
+          <label for="ffthx10">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Zubin Potok</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl11" type="text" class="validate">
+          <label for="xdsl11">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor11" type="text" class="validate">
+          <label for="kabllor11">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa11" type="password" class="validate">
+          <label for="fwa11">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx11" type="text" class="validate">
+          <label for="ffthx11">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Zvecan</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl12" type="text" class="validate">
+          <label for="xdsl12">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor12" type="text" class="validate">
+          <label for="kabllor12">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa12" type="password" class="validate">
+          <label for="fwa12">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx12" type="text" class="validate">
+          <label for="ffthx12">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Leposaviq</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl13" type="text" class="validate">
+          <label for="xdsl13">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor13" type="text" class="validate">
+          <label for="kabllor13">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa13" type="password" class="validate">
+          <label for="fwa13">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx13" type="text" class="validate">
+          <label for="ffthx13">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Peja</div>
+      <div class="collapsible-body"><span><p>Peja</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl14" type="text" class="validate">
+          <label for="xdsl14">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor14" type="text" class="validate">
+          <label for="kabllor14">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa14" type="password" class="validate">
+          <label for="fwa14">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx14" type="text" class="validate">
+          <label for="ffthx14">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+       <div class="collapsible-body"><span><p>Gjakova</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl15" type="text" class="validate">
+          <label for="xdsl15">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor15" type="text" class="validate">
+          <label for="kabllor15">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa15" type="password" class="validate">
+          <label for="fwa15">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx15" type="text" class="validate">
+          <label for="ffthx15">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Decani</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl16" type="text" class="validate">
+          <label for="xdsl16">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor16" type="text" class="validate">
+          <label for="kabllor16">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa16" type="password" class="validate">
+          <label for="fwa16">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx16" type="text" class="validate">
+          <label for="ffthx16">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Klina</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl17" type="text" class="validate">
+          <label for="xdsl17">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor17" type="text" class="validate">
+          <label for="kabllor17">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa17" type="password" class="validate">
+          <label for="fwa17">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx17" type="text" class="validate">
+          <label for="ffthx17">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Istogu</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl18" type="text" class="validate">
+          <label for="xdsl18">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor18" type="text" class="validate">
+          <label for="kabllor18">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa18" type="password" class="validate">
+          <label for="fwa18">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx18" type="text" class="validate">
+          <label for="ffthx18">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Juniku</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl19" type="text" class="validate">
+          <label for="xdsl19">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor19" type="text" class="validate">
+          <label for="kabllor19">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa19" type="password" class="validate">
+          <label for="fwa19">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx19" type="text" class="validate">
+          <label for="ffthx19">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+            <div class="collapsible-body"><span><p>Rahoveci</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl20" type="text" class="validate">
+          <label for="xdsl20">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor20" type="text" class="validate">
+          <label for="kabllor20">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa20" type="password" class="validate">
+          <label for="fwa20">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx20" type="text" class="validate">
+          <label for="ffthx20">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Prizreni</div>
+      <div class="collapsible-body"><span><p>Prizreni</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl21" type="text" class="validate">
+          <label for="xdsl21">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor21" type="text" class="validate">
+          <label for="kabllor21">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa21" type="password" class="validate">
+          <label for="fwa21">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx21" type="text" class="validate">
+          <label for="ffthx21">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+       <div class="collapsible-body"><span><p>Suhareka</p>
+      	<div class="row">
+     	<div class="input-field col s3">
+          <input id="xdsl22" type="text" class="validate">
+          <label for="xdsl22">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor22" type="text" class="validate">
+          <label for="kabllor22">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa22" type="password" class="validate">
+          <label for="fwa22">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx22" type="text" class="validate">
+          <label for="ffthx22">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Dragashi</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl23" type="text" class="validate">
+          <label for="xdsl23">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor23" type="text" class="validate">
+          <label for="kabllor23">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa23" type="password" class="validate">
+          <label for="fwa23">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx23" type="text" class="validate">
+          <label for="ffthx23">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Malisheva</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl24" type="text" class="validate">
+          <label for="xdsl24">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor24" type="text" class="validate">
+          <label for="kabllor24">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa24" type="password" class="validate">
+          <label for="fwa24">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx24" type="text" class="validate">
+          <label for="ffthx24">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Mamusha</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl25" type="text" class="validate">
+          <label for="xdsl25">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor25" type="text" class="validate">
+          <label for="kabllor25">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa25" type="password" class="validate">
+          <label for="fwa25">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx25" type="text" class="validate">
+          <label for="ffthx25">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Gjilani</div>
+      <div class="collapsible-body"><span><p>Gjilani</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl26" type="text" class="validate">
+          <label for="xdsl26">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor26" type="text" class="validate">
+          <label for="kabllor26">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa26" type="password" class="validate">
+          <label for="fwa26">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx26" type="text" class="validate">
+          <label for="ffthx26">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Ferizaji</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl27" type="text" class="validate">
+          <label for="xdsl27">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor27" type="text" class="validate">
+          <label for="kabllor27">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa27" type="password" class="validate">
+          <label for="fwa27">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx27" type="text" class="validate">
+          <label for="ffthx27">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Vitia</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl28" type="text" class="validate">
+          <label for="xdsl28">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor28" type="text" class="validate">
+          <label for="kabllor28">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa28" type="password" class="validate">
+          <label for="fwa28">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx28" type="text" class="validate">
+          <label for="ffthx28">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Kamenica</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl29" type="text" class="validate">
+          <label for="xdsl29">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor29" type="text" class="validate">
+          <label for="kabllor29">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa29" type="password" class="validate">
+          <label for="fwa29">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx29" type="text" class="validate">
+          <label for="ffthx29">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Hani i Elezit</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl30" type="text" class="validate">
+          <label for="xdsl30">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor30" type="text" class="validate">
+          <label for="kabllor30">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa30" type="password" class="validate">
+          <label for="fwa30">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx30" type="text" class="validate">
+          <label for="ffthx30">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Kacaniku</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl30" type="text" class="validate">
+          <label for="xdsl30">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor30" type="text" class="validate">
+          <label for="kabllor30">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa30" type="password" class="validate">
+          <label for="fwa30">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx30" type="text" class="validate">
+          <label for="ffthx30">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Shtime</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl31" type="text" class="validate">
+          <label for="xdsl31">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor31" type="text" class="validate">
+          <label for="kabllor31">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa31" type="password" class="validate">
+          <label for="fwa31">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx31" type="text" class="validate">
+          <label for="ffthx31">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Shterpc</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl32" type="text" class="validate">
+          <label for="xdsl32">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor32" type="text" class="validate">
+          <label for="kabllor32">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa32" type="password" class="validate">
+          <label for="fwa32">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx32" type="text" class="validate">
+          <label for="ffthx32">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Kllokoti</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl33" type="text" class="validate">
+          <label for="xdsl33">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor33" type="text" class="validate">
+          <label for="kabllor33">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa33" type="password" class="validate">
+          <label for="fwa33">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx33" type="text" class="validate">
+          <label for="ffthx33">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Ranilugu</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl34" type="text" class="validate">
+          <label for="xdsl34">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor34" type="text" class="validate">
+          <label for="kabllor34">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa34" type="password" class="validate">
+          <label for="fwa34">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx34" type="text" class="validate">
+          <label for="ffthx34">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+      <div class="collapsible-body"><span><p>Parteshi</p>
+      	<div class="row">
+      	<div class="input-field col s3">
+          <input id="xdsl35" type="text" class="validate">
+          <label for="xdsl35">xDSL</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="kabllor35" type="text" class="validate">
+          <label for="kabllor35">Kabllor</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="fwa35" type="password" class="validate">
+          <label for="fwa35">FWA</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="ffthx35" type="text" class="validate">
+          <label for="ffthx35">FFTHx</label>
+        </div>
+  		</div>
+      </span></div>
+    </li>
+  </ul>
+  <h5> Tarifat per sherbimet e qasjes ne internet te perdoruesve fundor (me TVSH) </h5>
+      	<div class="row">
+      	<div class="input-field col s6">
+          <input id="tarifa11" type="number" class="validate">
+          <label for="tarifa11">Tarifa e instalimit (€) </label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment27" type="text" class="validate">
+          <label for="koment27">Komente</label>
+        </div>
+        </div>
+        <div class="row">
+      	<div class="input-field col s6">
+          <input id="tarifa12" type="number" class="validate">
+          <label for="tarifa12">Tarifa e mirembajtjes (€) </label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment28" type="text" class="validate">
+          <label for="koment28">Komente</label>
+        </div>
+        </div>
+   <ul class="collapsible popout">
+   <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Tarifat e sherbimeve</div>
+      <div class="collapsible-body"><span>
+      <p> Shpejtesia < 1 Mbps </p>
+        <div class="row">
+        <div class="input-field col s3">
+          <input id="pershkrimi" type="text" class="validate">
+          <label for="pershkrimi">Pershkrimi</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa13" type="password" class="validate">
+          <label for="tarifa13">Tarifa</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment29" type="text" class="validate">
+          <label for="koment29">Komente</label>
+        </div>
+  		</div>
+        <p> 1 Mbps < Shpejtesia < 2 Mbps </p>
+          <div class="row">
+        <div class="input-field col s3">
+          <input id="pershkrimi2" type="text" class="validate">
+          <label for="pershkrimi2">Pershkrimi</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa14" type="password" class="validate">
+          <label for="tarifa14">Tarifa</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment30" type="text" class="validate">
+          <label for="koment30">Komente</label>
+        </div>
+  		</div>
+  		<p> 2 Mbps < Shpejtesia < 4 Mbps </p>
+          <div class="row">
+        <div class="input-field col s3">
+          <input id="pershkrimi3" type="text" class="validate">
+          <label for="pershkrimi3">Pershkrimi</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa15" type="password" class="validate">
+          <label for="tarifa15">Tarifa</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment31" type="text" class="validate">
+          <label for="koment31">Komente</label>
+        </div>
+  		</div>
+  		<p> 4 Mbps < Shpejtesia < 8 Mbps </p>
+          <div class="row">
+        <div class="input-field col s3">
+          <input id="pershkrimi4" type="text" class="validate">
+          <label for="pershkrimi4">Pershkrimi</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa16" type="password" class="validate">
+          <label for="tarifa16">Tarifa</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment32" type="text" class="validate">
+          <label for="koment32">Komente</label>
+        </div>
+  		</div>
+  		<p> 8 Mbps < Shpejtesia < 20 Mbps </p>
+          <div class="row">
+        <div class="input-field col s3">
+          <input id="pershkrimi5" type="text" class="validate">
+          <label for="pershkrimi5">Pershkrimi</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa17" type="password" class="validate">
+          <label for="tarifa17">Tarifa</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment33" type="text" class="validate">
+          <label for="koment33">Komente</label>
+        </div>
+  		</div>
+  		<p> Shpejtesia > 20 Mbps </p>
+          <div class="row">
+        <div class="input-field col s3">
+          <input id="pershkrimi6" type="text" class="validate">
+          <label for="pershkrimi6">Pershkrimi</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa18" type="password" class="validate">
+          <label for="tarifa18">Tarifa</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment34" type="text" class="validate">
+          <label for="koment34">Komente</label>
+        </div>
+  		</div>
+  		<p> Cmimi i ofertes minimale te reklamuar </p>
+          <div class="row">
+        <div class="input-field col s3">
+          <input id="pershkrimi7" type="text" class="validate">
+          <label for="pershkrimi7">Pershkrimi</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa19" type="password" class="validate">
+          <label for="tarifa19">Tarifa</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment35" type="text" class="validate">
+          <label for="koment35">Komente</label>
+        </div>
+  		</div>
+  		<p> Cmimi i ofertes maksimale te reklamuar </p>
+          <div class="row">
+        <div class="input-field col s3">
+          <input id="pershkrimi8" type="text" class="validate">
+          <label for="pershkrimi8">Pershkrimi</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="tarifa20" type="password" class="validate">
+          <label for="tarifa20">Tarifa</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="koment36" type="text" class="validate">
+          <label for="koment36">Komente</label>
+        </div>
+  		</div>
+       </span></div>
+    </li>
+    </ul>
+    <h5> Te ardhurat ne total sipas sherbimeve per tremujorin perkates (pa TVSH)</h5>
+    <div class="row"> 
+    <p> Te ardhurat nga sherbimet me pakice</p>
+      	<div class="input-field col s6">
+          <input id="sasia11" type="number" class="validate">
+          <label for="sasia11">Sasia</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="koment37" type="text" class="validate">
+          <label for="koment37">Komente</label>
+        </div>
+        </div>
+    <p> Te ardhurat nga sherbimet me shumice</p>
+    	<div class="row">
+      	<div class="input-field col s6">
+          <input id="sasia12" type="number" class="validate">
+          <label for="sasia12">Sasia</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="koment38" type="text" class="validate">
+          <label for="koment38">Komente</label>
+        </div>
+        </div>
+    <h5> Investime ne sherbime dhe infrastrukturen komunikuese</h5>
+    <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Investime ne mjete jo te prekshme</div>
+      <div class="collapsible-body"><span>
+      	<div class="row">
+      		<div class="input-field col s6">
+      			<input id="sasia13" type="number" class="validate">
+      			<label for="sasia13"> Sasia </label>
+      		</div>
+      		<div class="input-field col s6">
+      			<input id="koment39" type="number" class="validate">
+      			<label for="koment39"> Komente </label>
+      		</div>
+      	</div>
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Investime ne infrastrukture (rrjeti backbone)</div>
+      <div class="collapsible-body"><span>
+      	<div class="row">
+      		<div class="input-field col s6">
+      			<input id="sasia14" type="number" class="validate">
+      			<label for="sasia14"> Sasia </label>
+      		</div>
+      		<div class="input-field col s6">
+      			<input id="koment40" type="number" class="validate">
+      			<label for="koment40"> Komente </label>
+      		</div>
+      	</div>
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Investime ne infrastrukture (rrjeti i qasjes)</div>
+      <div class="collapsible-body"><span>
+      	<div class="row">
+      		<div class="input-field col s6">
+      			<input id="sasia15" type="number" class="validate">
+      			<label for="sasia15"> Sasia </label>
+      		</div>
+      		<div class="input-field col s6">
+      			<input id="koment41" type="number" class="validate">
+      			<label for="koment41"> Komente </label>
+      		</div>
+      	</div>
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons"></i>Investime ne sherbime telekomunikuese</div>
+      <div class="collapsible-body"><span>
+      	<div class="row">
+      		<div class="input-field col s6">
+      			<input id="sasia16" type="number" class="validate">
+      			<label for="sasia16"> Sasia </label>
+      		</div>
+      		<div class="input-field col s6">
+      			<input id="koment42" type="number" class="validate">
+      			<label for="koment42"> Komente </label>
+      		</div>
+      	</div>
+      </span></div>
+    </li>
+  </ul>
+  <h5> Te dhenat mbi numrin e punetoreve </h5>
+  <div class="row">
+  <p> Numri i punetoreve me orar te plote pune </p>
+      		<div class="input-field col s6">
+      			<input id="sasia17" type="number" class="validate">
+      			<label for="sasia17"> Sasia </label>
+      		</div>
+      		<div class="input-field col s6">
+      			<input id="koment43" type="number" class="validate">
+      			<label for="koment43"> Komente </label>
+      		</div>
+      	</div>
+  <div class="row">
+  <p> Numri i punetoreve me orar te pjesshem pune</p>
+      		<div class="input-field col s6">
+      			<input id="sasia18" type="number" class="validate">
+      			<label for="sasia18"> Sasia </label>
+      		</div>
+      		<div class="input-field col s6">
+      			<input id="koment44" type="number" class="validate">
+      			<label for="koment44"> Komente </label>
+      		</div>
+      	</div>
+  </div>
+  </div>
+</div>       	      	     	
+
 </body>

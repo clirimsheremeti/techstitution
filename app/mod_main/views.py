@@ -9,4 +9,4 @@ def index():
 @mod_main.route('/form')
 def form():
 	name = "Techstitution"
-	return render_template ("form.html", name=name)
+	return render_template ("form.html", name=name)	
